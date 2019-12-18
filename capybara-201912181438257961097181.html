@@ -1,4 +1,12 @@
-<h1>Woodland Festival Blues!</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Sales Vinyl</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Woodland Festival Blues!</h1>
 
 <h3>Search Stages</h3>
 <form action="/stages" method="get">
@@ -11,14 +19,14 @@
 
 <h3>Available Stages</h3>
 
-<% if @stages.any? %>
   <ul>
-    <% @stages.each do |stage| %>
-      <li><a href="/stages/<%= stage.id %>"><%= stage.name %></a></li>
-    <% end %>
+    
+      <li><a href="/stages/1">Red Stage</a></li>
+    
   </ul>
-<% else %>
-  <p>There are currently no stages to display.</p>
-<% end %>
 
 <a href="/stages/new">Add a New Stage</a>
+
+    </div>
+  </body>
+</html>
